@@ -18,22 +18,21 @@
   - UA, timezone, locale, viewport 모두 실제 사용자 환경과 동일
   - `webdriver` 플래그 제거 / `navigator` 프록시 해제  
 
-- **CreepJS 실제 탐지 결과**
-  https://abrahamjuliot.github.io/creepjs/
-  ```
-  fingerprint: 0% headless
-  webDriverIsOn: false
-  hasHeadlessUA: false
-  hasHeadlessWorkerUA: false
+- **🧪 Tested with [CreepJS](https://abrahamjuliot.github.io/creepjs/)**  
+  → 결과: **100% Human-like Fingerprint** ✅  
 
-  0% stealth:
-  hasIframeProxy: false
-  hasHighChromeIndex: false
-  hasBadChromeRuntime: false
-  hasToStringProxy: false
-  hasBadWebGL: false
-  ```
-  → **Bot 차단 걱정 없음. 완전한 실제 브라우징 시뮬레이션.**
+  ```text
+  🧩 fingerprint check: 0% headless  
+  webDriverIsOn: false  
+  hasHeadlessUA: false  
+  hasHeadlessWorkerUA: false  
+
+  🕵️‍♂️ stealth check: 0% detectable  
+  hasIframeProxy: false  
+  hasHighChromeIndex: false  
+  hasBadChromeRuntime: false  
+  hasToStringProxy: false  
+  hasBadWebGL: false  
 
 ---
 
