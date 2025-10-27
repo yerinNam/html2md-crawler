@@ -62,18 +62,24 @@ playwright install chromium
 
 ## 🧭 Usage
 
-python -m playcrawl.main --urls "D:\compare_random.txt" --ok-html "D:\ye\test\ok_html_err.jsonl" --ok-md "D:\ye\test\ok_markdown_err.jsonl" --err "D:\ye\test\err_err.jsonl" --concurrency 4 --origin-concurrency 1
+```bash
+python -m crawler.main   --urls "./urls.txt"   --ok-html "./ok_html.jsonl"   --ok-md   ./ok_markdown.jsonl"   --err     "./err.jsonl"   --concurrency 4   --origin-concurrency 1
+```
 
-### Command-line options
+---
 
---urls : URL 리스트 파일 경로 (.txt)  
---ok-html : HTML 결과 저장 JSONL  
---ok-md : Markdown 결과 저장 JSONL  
---err : 오류 로그 JSONL  
---headless : Headless 모드로 실행  
---concurrency : 전역 동시성 수 (기본 4)  
---origin-concurrency : 동일 오리진 내 동시성 상한 (기본 1)  
---proxy : HTTP 프록시 주소 (http://user:pass@host:port)
+### ⚙️ Command-line Options
+
+| Argument | Type | Description |
+|-----------|------|-------------|
+| `--urls` | `str` | URL 리스트 파일 경로 (`.txt`, 줄 단위) |
+| `--ok-html` | `str` | HTML 결과 저장 JSONL 파일 경로 |
+| `--ok-md` | `str` | Markdown 결과 저장 JSONL 파일 경로 |
+| `--err` | `str` | 오류 로그 JSONL 파일 경로 |
+| `--headless` | `flag` | Headless 모드로 실행 (기본: 창 표시됨) |
+| `--concurrency` | `int` | 전체 동시 실행 스레드 수 *(기본 4)* |
+| `--origin-concurrency` | `int` | 동일 오리진 내 최대 동시 요청 수 *(기본 1)* |
+| `--proxy` | `str` | HTTP 프록시 주소 (`http://user:pass@host:port`) |
 
 ---
 
