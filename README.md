@@ -22,17 +22,18 @@
   → 결과: **100% Human-like Fingerprint** ✅  
 
   ```text
-  🧩 fingerprint check: 0% headless  
+  fingerprint check: 0% headless  
   webDriverIsOn: false  
   hasHeadlessUA: false  
   hasHeadlessWorkerUA: false  
 
-  🕵️‍♂️ stealth check: 0% detectable  
+  stealth check: 0% detectable  
   hasIframeProxy: false  
   hasHighChromeIndex: false  
   hasBadChromeRuntime: false  
   hasToStringProxy: false  
-  hasBadWebGL: false  
+  hasBadWebGL: false
+  ```
 
 ---
 
