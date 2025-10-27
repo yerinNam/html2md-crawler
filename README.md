@@ -18,7 +18,8 @@
   - UA, timezone, locale, viewport 모두 실제 사용자 환경과 동일
   - `webdriver` 플래그 제거 / `navigator` 프록시 해제  
 
-  **CreepJS 실제 탐지 결과**
+- **CreepJS 실제 탐지 결과**
+  https://abrahamjuliot.github.io/creepjs/
   ```
   fingerprint: 0% headless
   webDriverIsOn: false
