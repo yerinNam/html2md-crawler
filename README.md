@@ -53,14 +53,21 @@
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Run
 
-pip install playwright html2markdown  
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yerinNam/html2md-crawler.git
+cd html2md-crawler
+```
+
+### 2️⃣ Install dependencies
+``` bash
+pip install -r requirements.txt
 playwright install chromium
+```
 
----
-
-## 🧭 Usage
+### 3️⃣ Run the crawler
 
 ```bash
 python -m crawler.main   --urls "./urls.txt"   --ok-html "./ok_html.jsonl"   --ok-md   ./ok_markdown.jsonl"   --err     "./err.jsonl"   --concurrency 4   --origin-concurrency 1
