@@ -28,8 +28,6 @@
 크롤러 환경의 브라우저 지문(Fingerprint) 및 탐지 회피(Stealth) 성능 테스트 결과입니다.  
 [**CreepJS**](https://abrahamjuliot.github.io/creepjs/) 를 사용해 실제 사람 브라우징 환경과의 유사도를 측정했습니다.
 
----
-
 ### Summary
 
 | 항목 | 결과 | 설명 |
