@@ -95,6 +95,13 @@ python -m crawler.main \
 
 ---
 
+## 🧾 Example Output (`example/ok_markdown.jsonl`)
+
+```jsonl
+"ADR 지표 - KOSPI KOSDAQ 등락비율 :: 오늘의 ADR\n\n* [ADR 지표 정보](http://adrinfo.kr/)\n\n* [오늘의 ADR](http://adrinfo.kr/)\n\n* [차트](http://adrinfo.kr/chart)\n\n* [ADR이란?](http://adrinfo.kr/about)\n\n* [후원하기](http://adrinfo.kr/donate)\n\n##### ADR Today\n\n한국증시의 등락비율 정보를 제공합니다.\n\nKOSPI\n\n2025-10-27 (12:30)\n\n## 84.08%\n (▲ \n 4.64)\n\n| 2025-10-24 | 79.44 (▲ 4.17) |\n| --- | --- |\n| 2025-10-23 | 75.27 (▼ 6.09) |\n\nKOSDAQ\n\n2025-10-27 (12:30)\n\n## 74.36%\n (▲ \n 2.04)\n\n| 2025-10-24 | 72.32 (▲ 1.02) |\n| --- | --- |\n| 2025-10-23 | 71.30 (▼ 6.27) |\n\n© 2018. ADRINFO All rights reserved.\n\n"
+```
+---
+
 ## ⚠️ 크롤링 주의사항 (Disclaimer)
 
 - 본 코드는 **연구·개발용 / 합법적 접근이 허용된 웹페이지**에 한해 사용해야 합니다.  
