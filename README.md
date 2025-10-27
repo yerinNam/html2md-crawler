@@ -18,7 +18,7 @@
   - UA, timezone, locale, viewport 모두 실제 사용자 환경과 동일
   - `webdriver` 플래그 제거 / `navigator` 프록시 해제  
 
-- **Tested with [CreepJS](https://abrahamjuliot.github.io/creepjs/)**  
+- Tested with [CreepJS](https://abrahamjuliot.github.io/creepjs/) 
   → 결과: **100% Human-like Fingerprint** ✅  
 
   ```text
@@ -34,6 +34,7 @@
   hasToStringProxy: false  
   hasBadWebGL: false
   ```
+  → **Bot 차단 걱정 없음. 완전한 실제 브라우징 시뮬레이션.**
 
 ---
 
