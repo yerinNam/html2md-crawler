@@ -73,7 +73,13 @@ playwright install chromium
 ### 3️⃣ Run the crawler
 
 ```bash
-python -m crawler.main   --urls "./urls.txt"   --ok-html "./ok_html.jsonl"   --ok-md   ./ok_markdown.jsonl"   --err     "./err.jsonl"   --concurrency 4   --origin-concurrency 1
+python -m crawler.main `  
+   --urls "./urls.txt" ` 
+   --ok-html "./ok_html.jsonl" `
+   --ok-md   "./ok_markdown_err.jsonl" `
+   --err     "./err.jsonl" `
+   --concurrency 4 `
+   --origin-concurrency 1
 ```
 
 ---
