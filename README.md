@@ -18,20 +18,25 @@
   - UA, timezone, locale, viewport 모두 실제 사용자 환경과 동일
   - `webdriver` 플래그 제거 / `navigator` 프록시 해제  
 
-  **실제 탐지 결과** <br>
-    fingerprint: 0% headless <br>
-    webDriverIsOn: false <br>
-    hasHeadlessUA: false <br>
-    hasHeadlessWorkerUA: false <br> <br>
-    
-    0% stealth: <br>
-    hasIframeProxy: false <br>
-    hasHighChromeIndex: false <br>
-    hasBadChromeRuntime: false <br>
-    hasToStringProxy: false <br>
-    hasBadWebGL: false <br>
+  **실제 탐지 결과**
+  ```
+  fingerprint: 0% headless
+  webDriverIsOn: false
+  hasHeadlessUA: false
+  hasHeadlessWorkerUA: false
 
-→ **Bot 차단 걱정 없음. 완전한 실제 브라우징 시뮬레이션.**
+  0% stealth:
+  hasIframeProxy: false
+  hasHighChromeIndex: false
+  hasBadChromeRuntime: false
+  hasToStringProxy: false
+  hasBadWebGL: false
+
+  platform hints:
+  Arial,"맑은 고딕"
+  Resistance score: 0.40ms
+  ```
+  → **Bot 차단 걱정 없음. 완전한 실제 브라우징 시뮬레이션.**
 
 ---
 
@@ -46,17 +51,46 @@
 
 ## 🧩 Dependencies
 
-- [Playwright](https://github.com/microsoft/playwright)
-- [html2markdown (PyPI)](https://pypi.org/project/html2markdown/)
+- Playwright
+- html2markdown (PyPI)
 - Python ≥ 3.10
 
 ---
 
 ## ⚙️ Installation
 
-```bash
-pip install playwright html2markdown
+pip install playwright html2markdown  
 playwright install chromium
 
+---
 
+## 🧭 Usage
+
+python -m playcrawl.main --urls "D:\compare_random.txt" --ok-html "D:\ye\test\ok_html_err.jsonl" --ok-md "D:\ye\test\ok_markdown_err.jsonl" --err "D:\ye\test\err_err.jsonl" --concurrency 4 --origin-concurrency 1
+
+### Command-line options
+
+--urls : URL 리스트 파일 경로 (.txt)  
+--ok-html : HTML 결과 저장 JSONL  
+--ok-md : Markdown 결과 저장 JSONL  
+--err : 오류 로그 JSONL  
+--headless : Headless 모드로 실행  
+--concurrency : 전역 동시성 수 (기본 4)  
+--origin-concurrency : 동일 오리진 내 동시성 상한 (기본 1)  
+--proxy : HTTP 프록시 주소 (http://user:pass@host:port)
+
+---
+
+## Example: 
+ python -m crawler.main --urls "./urls.txt" --ok-html "./ok_html.jsonl" --ok-md "./ok_markdown.jsonl" --err "./err.jsonl" --concurrency 4 --origin-concurrency 1
+---
+
+## 🪪 License
+
+이 프로젝트는 다음 오픈소스 라이선스를 따릅니다:
+- Playwright License (MIT)
+- html2markdown License (MIT)
+
+© 2025, yerinNam.  
+모든 상업적 사용 및 법적 책임은 사용자에게 있습니다.
   
