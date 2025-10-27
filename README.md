@@ -18,7 +18,7 @@
   - UA, timezone, locale, viewport 모두 실제 사용자 환경과 동일
   - `webdriver` 플래그 제거 / `navigator` 프록시 해제  
 
-  **실제 탐지 결과**
+  **CreepJS 실제 탐지 결과**
   ```
   fingerprint: 0% headless
   webDriverIsOn: false
@@ -31,10 +31,6 @@
   hasBadChromeRuntime: false
   hasToStringProxy: false
   hasBadWebGL: false
-
-  platform hints:
-  Arial,"맑은 고딕"
-  Resistance score: 0.40ms
   ```
   → **Bot 차단 걱정 없음. 완전한 실제 브라우징 시뮬레이션.**
 
