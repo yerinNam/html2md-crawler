@@ -96,7 +96,7 @@ python -m crawler.main \
 
 ---
 
-### ⚙️ Command-line Options
+### 🛠️ Command-line Options
 
 | Argument | Type | Description |
 |-----------|------|-------------|
