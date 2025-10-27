@@ -21,21 +21,51 @@
 - Tested with [CreepJS](https://abrahamjuliot.github.io/creepjs/) 
   → 결과: **100% Human-like Fingerprint** ✅  
 
-  ```text
-  fingerprint check: 0% headless  
-  webDriverIsOn: false  
-  hasHeadlessUA: false  
-  hasHeadlessWorkerUA: false  
+---
 
-  stealth check: 0% detectable  
-  hasIframeProxy: false  
-  hasHighChromeIndex: false  
-  hasBadChromeRuntime: false  
-  hasToStringProxy: false  
-  hasBadWebGL: false
-  ```
-  → **Bot 차단 걱정 없음. 완전한 실제 브라우징 시뮬레이션.**
+## 🧠 CreepJS Fingerprint Test (Playwright Stealth Mode)
 
+크롤러 환경의 브라우저 지문(Fingerprint) 및 탐지 회피(Stealth) 성능 테스트 결과입니다.  
+[**CreepJS**](https://abrahamjuliot.github.io/creepjs/) 를 사용해 실제 사람 브라우징 환경과의 유사도를 측정했습니다.
+
+---
+
+### Summary
+
+| 항목 | 결과 | 설명 |
+|------|------|------|
+| **Fingerprint Check** | 31% headless | 일부 headless 특성 존재 (가상 창 / API 누락) |
+| webDriverIsOn | false | `navigator.webdriver` 비활성화 ✅ |
+| hasHeadlessUA | false | User-Agent 정상 ✅ |
+| hasHeadlessWorkerUA | false | Worker 환경 정상 ✅ |
+| **Stealth Check** | 0% detectable | 완전한 탐지 회피 ✅ |
+| hasIframeProxy | false | iframe proxy 없음 ✅ |
+| hasHighChromeIndex | false | Chrome index 정상 ✅ |
+| hasBadChromeRuntime | false | Chrome runtime 정상 ✅ |
+| hasToStringProxy | false | toString proxy 없음 ✅ |
+| hasBadWebGL | false | WebGL 정상 ✅ |
+
+---
+
+### “Like Headless” 항목 분석
+
+| 항목 | 상태 | 설명 |
+|------|------|------|
+| noChrome | false | Chrome 객체 존재 → 정상 |
+| hasPermissionsBug | false | 권한 API 정상 |
+| noPlugins / noMimeTypes | false | 플러그인 및 MIME 타입 정상 ✅ |
+| notificationIsDenied | false | 알림 권한 정상 |
+| noTaskbar | true | ⚠️ 가상 창(headless) 의심 요소 |
+| noContentIndex / noContactsManager / noDownlinkMax | true | ⚠️ 일부 브라우저 API 부재 |
+| hasSwiftShader | false | 실제 GPU 사용 ✅ |
+> 🔸 “31% Like Headless”는 일부 환경적 신호(API 부재 등) 때문에 완전한 물리 브라우저로 인식되지 않는다는 의미입니다.
+
+> 결론:  
+> Playwright Stealth 모드는 **거의 완벽한 사람 환경(≈ 69%)** 으로 인식되며,  
+> DDOS/Bot 방어 시스템에서 **사람 브라우징으로 간주될 가능성이 높음**.  
+> 단, 일부 시스템은 `noTaskbar` 등 신호로 **부분적 headless 의심(31%)** 가능성이 있음.
+
+---
 ---
 
 ## ⚙️ Installation & Run
