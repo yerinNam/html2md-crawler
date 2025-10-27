@@ -77,10 +77,6 @@ python -m playcrawl.main --urls "D:\compare_random.txt" --ok-html "D:\ye\test\ok
 
 ---
 
-## Example: 
- python -m crawler.main --urls "./urls.txt" --ok-html "./ok_html.jsonl" --ok-md "./ok_markdown.jsonl" --err "./err.jsonl" --concurrency 4 --origin-concurrency 1
----
-
 ## 🪪 License
 
 이 프로젝트는 다음 오픈소스 라이선스를 따릅니다:
