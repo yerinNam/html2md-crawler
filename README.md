@@ -47,14 +47,6 @@
 
 ---
 
-## 🧩 Dependencies
-
-- Playwright
-- html2markdown (PyPI)
-- Python ≥ 3.10
-
----
-
 ## ⚙️ Installation & Run
 
 ### 1️⃣ Clone the repository
