@@ -65,6 +65,9 @@ cd html2md-crawler
 ``` bash
 pip install -r requirements.txt
 playwright install chromium
+
+# 만약 'playwright' 명령이 없다고 나오면:
+# python -m playwright install chromium
 ```
 
 ### 3️⃣ Run the crawler
