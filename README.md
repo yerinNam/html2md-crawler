@@ -43,7 +43,6 @@
 | hasToStringProxy | false | toString proxy 없음 ✅ |
 | hasBadWebGL | false | WebGL 정상 ✅ |
 
----
 
 ### “Like Headless” 항목 분석
 
