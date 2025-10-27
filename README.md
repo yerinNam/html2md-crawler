@@ -88,7 +88,6 @@ python -m crawler.main \
   --origin-concurrency 1
 ```
 
----
 
 ### 🛠️ Command-line Options
 
