@@ -60,12 +60,11 @@
 | hasSwiftShader | false | 실제 GPU 사용 ✅ |
 > 🔸 “31% Like Headless”는 일부 환경적 신호(API 부재 등) 때문에 완전한 물리 브라우저로 인식되지 않는다는 의미입니다.
 
-> 결론:  
+결론:  
 > Playwright Stealth 모드는 **거의 완벽한 사람 환경(≈ 69%)** 으로 인식되며,  
 > DDOS/Bot 방어 시스템에서 **사람 브라우징으로 간주될 가능성이 높음**.  
 > 단, 일부 시스템은 `noTaskbar` 등 신호로 **부분적 headless 의심(31%)** 가능성이 있음.
 
----
 ---
 
 ## ⚙️ Installation & Run
